@@ -7,7 +7,13 @@
  * @param {number} calificacionAprobatoria 
  */
 function aprobados(arr, calificacionAprobatoria) {
-
+    let cuenta = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if ( arr[i] >= calificacionAprobatoria ) {
+            cuenta = cuenta + 1
+        }
+    }
+    return cuenta;
 }
 
 module.exports = aprobados;
